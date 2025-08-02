@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The while loop</title>
+</head>
+<body>
+    <script>
+
+        /* while(condition){
+            code
+            so-called "loop body"
+        }
+            */
+
+        //ex1: while loops basic format
+
+        let i = 0;
+        while( i < 3){
+            console.log(i);
+            i++;
+        }
+
+        console.log("\n"); //used for a break in-between examples
+
+        //ex2: 
+
+        let j = 3;
+        while(j){
+            console.log(j); // while j becomes 0, the condition becomes falsy,
+                            //  and the loop stops.
+            j--;
+        }
+
+        console.log("\n"); 
+
+        //ex3: curly braces are not required for a single-line body
+
+        let k = 3;
+        while(k) console.log(k--); // I won't recommend
+
+        console.log("\n"); 
+
+        //ex4: do...while loop: basic format
+
+        /* do{
+            loop body
+        }while();
+
+        The body of the loop executes at least once 
+        regardless of the condition being truthy. */
+
+        let l = 0;
+        do{
+            console.log(l);
+            l++;
+        }while(l < 3);
+
+
+
+    </script>
+</body>
+</html>
