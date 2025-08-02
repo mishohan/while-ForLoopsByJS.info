@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The for loop</title>
+</head>
+<body>
+    <script>
+        /* Basic Syntax
+
+        for(begin; condition; step){
+            ...loop body...
+        }
+            */
+
+        //ex1: Basic format
+
+        for(let i = 0; i < 3; i++){
+            console.log(i); // 0 1 2
+        }
+
+        console.log("\n");
+
+        //ex2: Skipping parts
+
+        let i = 0;
+        for(; i<3; i++){ //skipping begin
+            console.log(i);
+        }
+
+        console.log("\n");
+
+        let j = 0; 
+        for(; j<3; ){ // skipping begin and step: identical while loop
+            console.log(j++);
+        }
+
+        // we can remove everything, creating an infinite loop
+        /* for(;;){
+            //please don't use it.
+        } */
+
+    </script>
+</body>
+</html>
